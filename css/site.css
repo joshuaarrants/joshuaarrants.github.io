@@ -1,0 +1,23 @@
+body 
+{
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 1.8em;
+    text-transform: none;
+    display: block;
+    margin: 0;
+    color: rgba(26,26,26,.75);
+}
+
+div 
+{
+    display: block;
+}
+
+.footer
+{
+   background-color: #26262a;
+}
