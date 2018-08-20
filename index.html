@@ -1,90 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Joshua Arrants - Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Raleway:800" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/site.css"/>
+</head>
+<style>
+    body {font-family: "Raleway", sans-serif}
+    </style>
     <body>
-        <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-            <meta name = "viewport" content="width = device-width, initial-scale = 1.0"/>
-            <title></title>
-            <link rel="stylesheet" href="css/site.css"/>
-        </head>
-        <!--The main div for the entire page-->
-        <div class="main-site">
-            <!--The div container for all content excluding footer-->
-            <div class="inner-content">
-                <!--Main header container-->
-                <header class="header">
-                    <!--Header navigation-->
-                    <nav class= "header-nav"> 
-                        <!--The div container for all header navigation elements-->
-                        <div class="header-nav-elements">
-                            <a href="" class="header-item">Home</a>
-                            <a href="" class="header-item">About</a>
-                            <a href="" class="header-item">Projects</a>
-                            <a href="" class="header-item">Contact</a>
-                            <a href="" class="header-item">Resume</a>
-                        </div>
-                    </nav>
-                </header>
-                <!--The div container for the outter content-->
-                <div class="outter-content">
-                    <main>
+    
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <a href="#projects">
+          <button class="w3-padding-large w3-button">PROJECTS <i class="fa fa-caret-down"></i></button>
+          </a>     
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="http://www.joshuaarrants.newbedesign.com/" target="_blank" class="w3-bar-item w3-button">Introduction to Web Design</a>
+            <a href="https://github.com/joshuaarrants/web-230" target="_blank" class="w3-bar-item w3-button">Introduction to JavaScript </a>
+            <a href="https://github.com/joshuaarrants/web-330" target="_blank" class="w3-bar-item w3-button">Enterprise JavaScript II</a>
+            <a href="https://github.com/joshuaarrants/web-340" target="_blank" class="w3-bar-item w3-button">Node.js</a>
+          </div>
+        </div>
+        <div class="w3-right w3-padding-large">
+            <a href="https://github.com/joshuaarrants" title="Github" target="_blank">
+              <i class="fa fa-github w3-hover-opacity w3-padding-small"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/josh-arrants-a2b46615b/" title="Linkedin" target="_blank">
+              <i class="fa fa-linkedin w3-hover-opacity w3-padding-small"></i>
+            </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+      <a href="#resume" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESUME</a>
+      <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+    </div>
+    
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-                    </main>
+      <!-- The Band Section -->
+      <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px" id="about">
+        <h2 class="w3-wide">ABOUT ME</h2>
+        <p><b>Joshua Arrants</b></p>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class= "w3-padding-32">
+            <img src="images/portfolio-picture.JPG" class="w3-round-xxlarge w3-margin-bottom" alt="Me" style="width:50%">
+          </div>
+        </div>
+      </div>
+    
+      <!-- The Project Section -->
+      <div class="w3-black" id="projects">
+        <div class="w3-container w3-content w3-padding-32" style="max-width:800px">
+          <h2 class="w3-wide w3-center">CLASS PROJECTS</h2>
+          <p class="w3-opacity w3-center"><i>My work as a student @Bellevue University</i></p><br>
+    
+          <div class="w3-row-padding w3-padding-small w3-center" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom w3-display-container">
+              <img src="images/WEB200.png" alt="WEB200" class="w3-image">
+              <div class="w3-display-middle">
+                <p><i>Introduction to Web Design</i></p>
+                <a href="https://github.com/joshuaarrants/bioSite" target="_blank" class="w3-button w3-border w3-hover-black w3-padding-small"><i>View Projects</i></a>
+              </div>
+            </div>
+            <div class="w3-third w3-margin-bottom w3-display-container">
+              <img src="images/WEB231.png" alt="WEB231" style="width: 95%" class="w3-image w3-round-xxlarge">
+              <div class="w3-display-middle">
+                <p class=""><i>Introduction to JavaScript</i></p>
+                <a href="https://github.com/joshuaarrants/web-230" target="_blank" class="w3-button w3-border w3-hover-black w3-padding-small"><i>View Projects</i></a>
+              </div>
+            </div>
+            <div class="w3-third w3-margin-bottom w3-display-container">
+                <img src="images/WEB330.png" alt="WEB231" style="width: 95%" class="w3-image w3-round-xxlarge">
+                <div class="w3-display-middle">
+                  <p class=""><i>Enterprise JavaScript II</i></p>
+                  <a href="https://github.com/joshuaarrants/web-330" target="_blank" class="w3-button w3-border w3-hover-black w3-padding-small"><i>View Projects</i></a>
                 </div>
             </div>
-            <!--Footer container-->
-            <footer class="footer">
-                <!--The div containter for all content within the footer-->
-                <div class="inner-footer">
-                    <!--The div container for the top content of the footer-->
-                    <div class="top-footer">
-                        <h1></h1>
-                    </div>
-                    <!--The div container for the middle content of the footer-->
-                    <div class="middle-footer">
-                        <!--Footer navigation-->
-                        <nav class="footer-nav">
-                            <!--The div container for all footer navigation elements-->
-                            <div class="footer-nav-elements">
-                                <a href="" class="header-item">Home</a>
-                                <a href="" class="header-item">About</a>
-                                <a href="" class="header-item">Projects</a>
-                                <a href="" class="header-item">Contact</a>
-                                <a href="" class="header-item">Resume</a>
-                            </div>
-                        </nav>
-                    </div>
-                    <!--The div container for the bottom content of the footer-->
-                    <div class="bottom-footer">
-                        <!--div container for copyright content-->
-                        <div class="copyright-content">
-                            <p>@2018 Joshua Arrants</p>
-                        </div>
-                        <!--The div container for social account links-->
-                        <div class="social-account-links">
-                            <!--Social account navigation-->
-                            <nav class="social-account">
-                                <a href="" target="_blank" class="social-item">
-                                    <img src="">
-                                </a>
-                                <a href="" target="_blank" class="social-item">
-                                    <img src="">
-                                </a>
-                                <a href="" target="_blank" class="social-item">
-                                    <img src="">
-                                </a>
-                                <a href="" target="_blank" class="social-item">
-                                    <img src="">
-                                </a>
-                                <a href="" target="_blank" class="social-item">
-                                    <img src="">
-                                </a>
-                            </nav>
-                        </div>
-                    </div>  
+          </div>
+          <div class="w3-row-padding w3-padding-3 w3-center" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom w3-display-container">
+                <img src="images/WEB340.png" alt="WEB231" class="w3-image">
+                <div class="w3-display-middle">
+                  <p class=""><i>Node.js</i></p>
+                  <a href="https://github.com/joshuaarrants/web-340" target="_blank" class="w3-button w3-border w3-hover-black w3-padding-small"><i>View Projects</i></a>
                 </div>
-            </footer>
+            </div>   
+          </div>
+          <hr>
+          <h2 class="w3-wide w3-center">OTHER PROJECTS</h2>
+          <p class="w3-opacity w3-center"><i>Projects Outside of the Classroom</i></p><br>
         </div>
+      </div>
+    
+      <!-- The Contact Section -->
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>Want to know more about me? Send me a message.</i></p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Montgomery, AL<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: (308) 390-8533<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: josharrants@hotmail.com<br>
+          </div>
+          <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+              </div>
+              <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+              <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    <!-- End Page Content -->
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black ">
+      <p class="w3-xlarge"></p>
+      <div class="w3-bar w3-padding-large w3-small w3-hide-small">
+          <a href="#" class="w3-bar-item w3-padding-small w3-hover-opacity-min">HOME</a>
+          <a href="#about" class="w3-bar-item w3-padding-small w3-hover-opacity-min">ABOUT</a>
+          <a href="#contact" class="w3-bar-item w3-padding-small w3-hover-opacity-min">CONTACT</a>
+          <a href="#resume" class="w3-bar-item w3-padding-small w3-hover-opacity w3-hover-opacity-min">RESUME</a>
+          <a href="#projects" class="w3-bar-item w3-padding-small w3-hover-opacity w3-hover-opacity-min">PROJECTS</a>
+      </div>
+      <div class="w3-padding-large">
+          <a href="https://github.com/joshuaarrants" title="Github" target="_blank">
+            <i class="fa fa-github w3-hover-opacity w3-padding-small"></i></a>
+          <a href="https://www.linkedin.com/in/josh-arrants-a2b46615b/" title="Linkedin" target="_blank">
+            <i class="fa fa-linkedin w3-hover-opacity w3-padding-small"></i></a>
+      </div>
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    
+    <script>
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+}
+</script>
+    </script>
+    
     </body>
-</html>
+    </html>
